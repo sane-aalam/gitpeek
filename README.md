@@ -43,9 +43,9 @@ gitpeek/
 
 ## 📸 Preview
 
-> *(Add screenshots or screen recording after building UI)*
+![GitPeek Preview](./src//assets/gitpeak-github1.png) 
+![GitPeek Preview](./src//assets/gitpeak-github2.png) 
 
----
 
 ## 🧑‍💻 Getting Started
 
