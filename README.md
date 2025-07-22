@@ -80,9 +80,3 @@ This project is open-source and available under the [MIT License](LICENSE).
 Inspired by GitHub itself and the need to instantly explore developer profiles with clean UI and fast interaction.
 
 ---
-
-Let me know if you want:
-
-* A custom logo or favicon
-* To deploy it live on GitHub Pages or Vercel
-* Pagination or repo language filters
