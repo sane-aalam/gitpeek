@@ -21,6 +21,7 @@ const GithubSearch = () => {
         try {
             const response = await axios.get(`https://api.github.com/users/${username}`);
             setProfile(response.data);
+            console.log(response.data)
             setError(null);
             setFollowers([]);
         } catch (error) {
@@ -33,11 +34,11 @@ const GithubSearch = () => {
         e.preventDefault();
         try {
             setIsPending(true);
-            const res = await fetch(
+            const response = await axios.get(
                 `https://api.github.com/users/${username}/followers`
             );
-            const data = await res.json();
-            setFollowers(data);
+            setFollowers(response.data);
+            console.log(response.data);
         } catch (error) {
             console.log(error);
         } finally {
@@ -47,7 +48,7 @@ const GithubSearch = () => {
 
     return (
         <div className='main-container'>
-            <h1 className='main-heading'>GitHub User Finder</h1>
+            <h1 className='main-heading'>GitPeek 📷</h1>
             <form onSubmit={handleSubmit} className='search-form'>
                 <input type='text' placeholder='Enter Github Username....' value={username} className='search-input' onChange={(e) => setUsername(e.target.value)}></input>
                 <button type='submit' className='search-btn'>Search</button>
