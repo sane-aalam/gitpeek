@@ -1,5 +1,5 @@
 
-````markdown
+
 # 👀 GitPeek – GitHub User Finder
 
 **GitPeek** is a fast and simple React-based application to search and preview any GitHub user's public profile. Enter a username and instantly peek into their GitHub stats, repositories, followers, and more!
